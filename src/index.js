@@ -6,15 +6,16 @@ import registerServiceWorker from './registerServiceWorker';
 import { AppContainer } from 'react-hot-loader';
 import {Provider} from 'react-redux';
 import store from '@/store/store';
+import 'antd-mobile/dist/antd-mobile.less'
 import './utils/setRem';
 import './style/base.css';
 
 FastClick.attach(document.body);
 
 // 监听state变化
-// store.subscribe(() => {
-//   console.log('store发生了变化');
-// });
+store.subscribe(() => {
+  console.log('store发生了变化');
+});
 
 const render = Component => {
   ReactDOM.render(

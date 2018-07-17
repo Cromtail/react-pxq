@@ -1,7 +1,7 @@
 import * as home from './action-type';
 
 let defaultState = {
-  orderSum: '', //金额
+  orderSum: '555', //金额
   name: '', //姓名
   phoneNo: '', //手机号
   imgpath: '', //图片地址
